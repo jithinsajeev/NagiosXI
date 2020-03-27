@@ -1,0 +1,11 @@
+configure -> core config manager -> monitroing -> Services.
+
+Config Name - check_mysql
+Description - This program tests connections to a MySQL server.
+Check command - check_mysql
+Command view - $USER1$/check_mysql -H $HOSTADDRESS$ -P $ARG1$ $ARG2$
+$ARG1$ - 3306
+$ARG2$ - -u root -p PASSWORD
+
+Core Config Manager -> Quick Tools -> Apply Configuration. 
+=============================================
