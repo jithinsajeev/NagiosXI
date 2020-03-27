@@ -1,3 +1,3 @@
 check_mysql
-$USER1$/check_mysql -H $HOSTADDRESS$ -P $ARG1$ -u $ARG2$ -p  $ARG3$
+$USER1$/check_mysql -H $HOSTADDRESS$ -P $ARG1$ $ARG2$ $ARG3$
 ----------------------
