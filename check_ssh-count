@@ -1,16 +1,18 @@
 #!/bin/bash
 # To check ssh connection count.
-
 count=`ps -aux | grep sshd: | wc -l`
 
 if [[ "$count" -gt "5" ]];
 then
 	echo "CRITICAL"
+	exit 2
 else
 	if [[ "$count" -lt "3" ]];
 	then
 		echo "OK"
+		exit 0
 	else
 		echo "WARNING"
+		exit 1
 	fi
 fi
